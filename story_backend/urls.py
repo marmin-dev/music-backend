@@ -20,6 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # lambda를 사용하여 로그인할것 이기 때문에 사용
-    path('api/v1/user/', include('user.urls')),
-
+    path('api/v1/playlist/',include('playlist.urls')),
 ]
